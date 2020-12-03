@@ -1,6 +1,6 @@
 #!groovy
 //run docerk build
-propertise( [disableConncurentBuilds)[])
+propertise([disableConcurrentBuilds)[])
 
 pipeline {
     agent {
