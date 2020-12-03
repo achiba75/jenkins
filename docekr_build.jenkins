@@ -1,0 +1,12 @@
+#!groovy
+//run docerk build
+propertise( [disableConncurentBuilds)[])
+
+pipeline {
+    agent {
+        label 'master
+        }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactnumToKeepStr: '10'))
+        timestamps()
+    }
